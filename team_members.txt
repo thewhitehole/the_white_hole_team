@@ -1,5 +1,5 @@
 Alejandro Alfonso -> Backend and utility developer
-Mario Sergio Mora
+Mario Sergio Mora -> Frontend and utility developer
 Jose Diago
 Javier Castellon
 Cesar
