@@ -28,3 +28,6 @@ El procedimiento para trabajar es el siguiente:
     Este paso, al igual que el 4 debe pedir las credenciales del repositorio remoto.
 Los pasos 7 y 8 se repiten hasta que el creador del issue apruebe los cambios. En ese caso
 tienes que hacer un pull request en la rama del issue y esperar a que sea unidoa la rama master.
+Aqui, en la pestaña issues encontraran issues de prueba para todos, cuando quieran hacer el tutorial con estos issues de prueba me escriben al telegram, atentamente:
+
+                                                                    Admin
