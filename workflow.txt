@@ -1,0 +1,30 @@
+El procedimiento para trabajar es el siguiente:
+
+1-) Alguien del equipo crea un issue en el repositorio remoto.
+2-) Ese issue es asignado a alguien. Uno se lo puede autoasignar.
+3-) El que va a trabajar en el issue crea un nuevo branch con el nombre del issue.
+4-) Clona el repositorio mediante:
+   ~$ git clone <url del repositorio remoto>
+   Esta url se puede obtener en el remoto en un boton <clone or download>
+   Este paso debe pedir las credenciales del sitio, en caso de que el repo sea privado.
+5-) Una vez clonado el repo se para en el directorio raiz, por ejemplo, haciendo:
+   ~$ cd <nombre del proyecto>
+6-) El siguiente pasoes escencial y nunca debe olvidarse. Tienes que ubicarte en la rama que creaste
+    para el issue de modo que no se modifique el master. Para esto se hace:
+    ~$ git checkout <nombre de la rama>
+    Para estar seguros de que estamos en la rama correcta se hace:
+    ~$ git branch
+7-) Ahora si, se realizan las modificaciones necesarias siguiendo el siguiente ciclo las veces necesarias:
+   7.1) Se modifica el codigo para resolver el issue en cuestion
+   7.2) Se adicionan los archivos modificados con:
+       ~$ git add archivos 
+       o
+       ~$ git add .
+       Este ultimo esmas sencillo y adiciona todos los archivos.
+   7.3) Se realiza el commit con:
+       ~$ git commit -m "Mensaje con una breve descripcion de lo que se cambio"
+8-) Se suben los cambios al repositorio remoto con:
+    ~$ git push
+    Este paso, al igual que el 4 debe pedir las credenciales del repositorio remoto.
+Los pasos 7 y 8 se repiten hasta que el creador del issue apruebe los cambios. En ese caso
+tienes que hacer un pull request en la rama del issue y esperar a que sea unidoa la rama master.
